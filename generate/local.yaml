@@ -1,5 +1,8 @@
 
-save_dir: GLOBAL_PATH_TO_SYNTH_DATA_DIR
-datadream_dir: GLOBAL_PATH_TO_DATADREAM_CKPT_DIR
+# save_dir: GLOBAL_PATH_TO_SYNTH_DATA_DIR
+save_dir: ../aug
+# datadream_dir: GLOBAL_PATH_TO_DATADREAM_CKPT_DIR
+datadream_dir: ../DataDream/outputs
 model_dir: 
-    sd2.1: PATH_TO_SD2.1_DIR
+    # sd2.1: PATH_TO_SD2.1_DIR
+    sd2.1: ../stable-diffusion-2-1

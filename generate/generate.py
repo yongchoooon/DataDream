@@ -121,6 +121,7 @@ def get_dataset_name_for_template(dataset):
         "food101": "food ",
         "sun397": "scene ",
         "caltech101": "",
+        "cub200": "bird ",
     }[dataset]
     return dataset_name
 
@@ -382,9 +383,9 @@ def main(
     iters = SUBSET_NAMES[dataset]
 
     # parallel computing
-    step = len(iters) // n_set_split
-    start_idx = split_idx * step
-    end_idx = (split_idx + 1) * step if (split_idx + 1) != n_set_split else len(iters)
+    step = len(iters) // n_set_split # n_set_split: 1 -> step : 10 (=class 수)
+    start_idx = split_idx * step # split_idx : 0 -> start_idx : 0
+    end_idx = (split_idx + 1) * step if (split_idx + 1) != n_set_split else len(iters) # len(iters) : 10
     print(
         f"SPLIT!! Out of {len(SUBSET_NAMES[dataset])} pairs, we generate from idx {start_idx} to {end_idx}."
     )

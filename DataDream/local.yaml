@@ -1,5 +1,11 @@
 fewshot_data_dir: 
-    eurosat: PATH_TO_FEWSHOT_DATA_DIR
+    # eurosat: PATH_TO_FEWSHOT_DATA_DIR
+    pets: ../data/pets/real_train_fewshot
+    caltech101: ../data/caltech101/real_train_fewshot
+    food101: ../data/food101/real_train_fewshot
+    cub200: ../data/cub200/real_train_fewshot
+    flowers102: ../data/flowers102/real_train_fewshot
 
 model_dir: 
-    sd2.1: PATH_TO_SD2.1_DIR
+    # sd2.1: PATH_TO_SD2.1_DIR
+    sd2.1: ../stable-diffusion-2-1

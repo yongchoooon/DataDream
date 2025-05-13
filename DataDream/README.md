@@ -30,5 +30,7 @@ where `DATASET` is the dataset name and `CLASS_IDX` is an integer number. You co
 
 ```python
 bash bash_run.sh $GPU $SPLIT_IDX
+bash bash_run.sh 0 0
 ```
+- 이는 GPU 0번에서 0번 스플릿을 실행하는 명령어
 where `SPLIT_IDX` is an integer number that specifies the list of integer numbers for `CLASS_IDX`.

@@ -178,6 +178,7 @@ class DataDreamDataset(Dataset):
 
         self.fewshot_data_dir = Path(fewshot_data_dir)
         if not self.fewshot_data_dir.exists():
+            print(self.fewshot_data_dir)
             raise ValueError("Instance images root doesn't exists.")
 
         (
@@ -325,16 +326,16 @@ def main(args):
     accelerator = Accelerator(
         gradient_accumulation_steps=args.gradient_accumulation_steps,
         mixed_precision=args.mixed_precision,
-        log_with=args.report_to,
+        # log_with=args.report_to,
         project_config=accelerator_project_config,
     )
 
-    if args.report_to == "wandb":
-        if not is_wandb_available():
-            raise ImportError(
-                "Make sure to install wandb if you want to use it for logging during training."
-            )
-        import wandb
+    # if args.report_to == "wandb":
+    #     if not is_wandb_available():
+    #         raise ImportError(
+    #             "Make sure to install wandb if you want to use it for logging during training."
+    #         )
+    #     import wandb
 
     # Currently, it's not possible to do gradient accumulation when training two models with accelerate.accumulate
     # This will be enabled soon in accelerate. For now, we don't allow gradient accumulation when training two models.

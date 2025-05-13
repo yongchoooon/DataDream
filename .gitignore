@@ -8,3 +8,8 @@ classify/__pycache__
 classify/models/__pycache__
 classify/outputs*
 classify/wandb
+
+stable-diffusion-2-1/
+aug/
+data/
+aa-datadream/

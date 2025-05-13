@@ -295,15 +295,15 @@ def parse_args(input_args=None):
             " https://pytorch.org/docs/stable/notes/cuda.html#tensorfloat-32-tf32-on-ampere-devices"
         ),
     )
-    parser.add_argument(
-        "--report_to",
-        type=str,
-        default="tensorboard",
-        help=(
-            'The integration to report the results and logs to. Supported platforms are `"tensorboard"`'
-            ' (default), `"wandb"` and `"comet_ml"`. Use `"all"` to report to all integrations.'
-        ),
-    )
+    # parser.add_argument(
+    #     "--report_to",
+    #     type=str,
+    #     default="tensorboard",
+    #     help=(
+    #         'The integration to report the results and logs to. Supported platforms are `"tensorboard"`'
+    #         ' (default), `"wandb"` and `"comet_ml"`. Use `"all"` to report to all integrations.'
+    #     ),
+    # )
     parser.add_argument(
         "--mixed_precision",
         type=str,

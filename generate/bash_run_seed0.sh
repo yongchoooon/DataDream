@@ -1,22 +1,22 @@
 
 GPU="$1"
-N_SET_SPLIT=5
+N_SET_SPLIT=1
 SPLIT_IDX="$2"
 
 
 BS=10
-NIPC=20
+NIPC=110
 SD="sd2.1"
 GS=2.0
 
-N_SHOT=16
+N_SHOT=1
 N_TEMPLATE=1
 
 MODE="datadream"
 DD_LR=1e-4
 DD_EP=200
 
-DATASET="eurosat"
+DATASET="pets"
 IS_DATASETWISE=False
 FEWSHOT_SEED="seed0"
 
