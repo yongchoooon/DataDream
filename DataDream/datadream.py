@@ -173,6 +173,7 @@ class DataDreamDataset(Dataset):
             "flowers102": "flower ",
             "sun397": "scene ",
             "caltech101": "",
+            "cub200": "bird ",
         }[dataset]
         self.target_class_idx = target_class_idx
 
