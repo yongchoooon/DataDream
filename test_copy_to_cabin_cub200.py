@@ -3,7 +3,7 @@ import shutil
 
 dataset = "cub"
 
-path = 'aug/cub/sd2.1/gs2.0_nis50/shot1_seed{i}_template1_lr0.0001_ep200/train'
+path = 'aug/cub200/sd2.1/gs2.0_nis50/shot1_seed{i}_template1_lr0.0001_ep200/train'
 
 path_1 = path.format(i=1)
 class_names = [
