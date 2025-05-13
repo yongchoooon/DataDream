@@ -1,13 +1,13 @@
 
-GPU="$1"
+GPU=0
 SET_SPLIT=1 # GPU당 클래스를 몇개로 나눌 것인가
-SPLIT_IDX="$2"
+SPLIT_IDX=0
 
 ### ------------------
 ### Parameters
 ### ------------------
-DATASET="pets"
-N_CLS=37
+DATASET="$1"
+N_CLS="$2"
 FEWSHOT_SEED="seed2"
 N_SHOT=1
 NUM_TRAIN_EPOCH=200

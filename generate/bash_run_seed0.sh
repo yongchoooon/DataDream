@@ -1,7 +1,7 @@
 
-GPU="$1"
+GPU=0
 N_SET_SPLIT=1
-SPLIT_IDX="$2"
+SPLIT_IDX=0
 
 
 BS=10
@@ -16,7 +16,7 @@ MODE="datadream"
 DD_LR=1e-4
 DD_EP=200
 
-DATASET="pets"
+DATASET="$1"
 IS_DATASETWISE=False
 FEWSHOT_SEED="seed0"
 
