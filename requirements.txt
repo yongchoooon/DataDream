@@ -18,7 +18,7 @@ google-cloud-aiplatform
 langchain
 transformers>=4.37.2
 diffusers>=0.18.0
-accelerate
+accelerate==1.6.0
 invisible_watermark
 safetensors
 peft==0.15.2
