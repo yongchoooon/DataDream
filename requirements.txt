@@ -21,8 +21,9 @@ diffusers>=0.18.0
 accelerate
 invisible_watermark
 safetensors
-peft
+peft==0.15.2
 torchvision
 clip
 timm
 loralib
+jinja2==3.1.4
