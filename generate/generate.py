@@ -393,6 +393,14 @@ def main(
 
     # generate & save synthetic images
     for classname in tqdm(iters_partial, total=len(iters_partial)):
+        _save_dir = ospj(generate_image.save_dir, "train", classname)
+        from pathlib import Path
+        if Path(_save_dir).is_dir() and len(os.listdir(_save_dir)) == 111:
+            print(f"Already generated {classname}.")
+            continue
+        
+        print(f"Generating {classname}...")
+
         if mode == "datadream":
             if is_dataset_wise_model:
                 # update pipe just in the beginning
