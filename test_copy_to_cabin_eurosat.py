@@ -16,6 +16,7 @@ for i in range(3):
     
     for idx, class_name in enumerate(class_names):
         image_files = os.listdir(os.path.join(_path, class_name))
+        image_files = [image_file for image_file in image_files if image_file.endswith('.png')]
         new_image_files = [f'aug-{idx}-{os.path.basename(image_file)}' for image_file in image_files if image_file.endswith('.png')]
         
         new_image_paths = [os.path.join('aa-datadream',f'eurosat-{i}-1', new_image_file) for new_image_file in new_image_files]
